@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shree Ram Vadapav - Authentic Maharashtrian Taste</title>
+    <meta name="description"
+        content="Shree Ram Vadapav - The Authentic Taste of Maharashtrian Street Food. Enjoy hot crispy samosas, spicy misal pav, and world-class vadapav. Enquire for franchise today.">
+    <meta name="keywords"
+        content="Shree Ram Vadapav, Best Vadapav, Authentic Maharashtrian Snacks, Misal Pav, Samosa, Indian Street Food, Franchise Opportunity, Fast Food India">
+    <meta name="author" content="Shree Ram Vadapav">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph for Social Media -->
+    <meta property="og:title" content="Shree Ram Vadapav - Authentic Maharashtrian Taste">
+    <meta property="og:description"
+        content="Experience the magic of authentic Indian street food. Check out our menu and franchise details!">
+    <meta property="og:type" content="website">
+
+    <!-- Schema.org Markup for Google Local Business Ranking -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Shree Ram Vadapav",
+      "image": "images/hero.png",
+      "description": "Authentic Maharashtrian Taste offering Vadapav, Misal Pav, and other local snacks.",
+      "telephone": "+91-9021210564",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Maharashtra",
+        "addressCountry": "IN"
+      },
+      "servesCuisine": "Indian Street Food",
+      "priceRange": "₹"
+    }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="Shree Ram Vadapav Logo"
+                    style="height: 55px; width: 55px; border-radius: 50%; object-fit: cover;">
+                Shree Ram <span>Vadapav</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#franchise">Franchise</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="theme-toggle" class="theme-toggle" aria-label="Toggle Night Mode"
+                        title="Toggle Craving Mode" style="font-size: 1.3rem; color: var(--primary-color);"><i
+                            class="fa-solid fa-mug-hot"></i></button></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <img src="images/hero.png" alt="Delicious Indian Snacks">
+            <div class="overlay"></div>
+        </div>
+        <div class="container hero-content">
+            <h1 class="animate-up">The Authentic Taste of <br><span>Street Food</span></h1>
+            <p class="animate-up delay-1">Hot, fresh, and unforgettable flavors. Experience the magic of spices at Shree
+                Ram Vadapav.</p>
+            <div class="hero-btns animate-up delay-2">
+                <a href="#menu" class="btn btn-primary">View Menu</a>
+                <a href="#contact" class="btn btn-secondary">Find Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Complete Menu</h2>
+                <p>Freshly prepared every day with love and authentic spices.</p>
+            </div>
+
+            <div class="menu-grid">
+                <!-- Highlight Items with Images -->
+                <div class="menu-card highlight">
+                    <div class="card-img">
+                        <img src="images/vadapav.png" alt="Vada Pav">
+                        <div class="price-tag">₹18</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Authentic Vada Pav</h3>
+                        <p>Your first love in Mumbai! The soft pav and crispy vada hugging together with spicy garlic
+                            chutney will fix any bad day. Guaranteed.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card highlight">
+                    <div class="card-img">
+                        <img src="images/samosa.png" alt="Samosa">
+                        <div class="price-tag">₹18</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Crispy Samosa</h3>
+                        <p>Golden, flaky triangles of absolute joy. Caution: Will cause extreme nostalgia and sudden
+                            cravings for rainy evenings.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card highlight">
+                    <div class="card-img">
+                        <img src="images/kachori_plate_1772638814862.png" alt="Kachori">
+                        <div class="price-tag">₹18</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Kachori </h3>
+                        <p>One bite and you're transported straight to your grandmother's kitchen. Flaky outside, a
+                            warm, perfectly spiced secret inside.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card highlight">
+                    <div class="card-img">
+                        <img src="images/shabu_vada_plate_1772638853645.png" alt="Shabu Vada">
+                        <div class="price-tag">₹20</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Shabu Vada </h3>
+                        <p>Fasting? More like feasting! These crispy, peanutty golden jewels make us secretly wish we
+                            were fasting every day.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card highlight">
+                    <div class="card-img">
+                        <img src="images/bread_patise_1772638911566.png" alt="Bread Patise">
+                        <div class="price-tag">₹18</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Bread Patise </h3>
+                        <p>When bread and potato get serious and decide to get deep-fried together. The ultimate monsoon
+                            soulmate.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card highlight">
+                    <div class="card-img">
+                        <img src="images/dhokla_plate_1772639170415.png" alt="Dhokla">
+                        <div class="price-tag">Special</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Dhokla Special </h3>
+                        <p>So soft and spongy, it could double as a pillow! Sweet, tangy, and bursting with love. Jai
+                            Jinendra!</p>
+                    </div>
+                </div>
+
+                <div class="menu-card highlight">
+                    <div class="card-img">
+                        <img src="images/veg_pulav_1772638976118.png" alt="Veg Pulav">
+                        <div class="price-tag">₹40</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Veg Pulav </h3>
+                        <p>When you need the comfort of home, this aromatic, veggie-packed hug-in-a-bowl is exactly what
+                            mom would order.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card highlight">
+                    <div class="card-img">
+                        <img src="images/puri_bhaji_1772639086733.png" alt="Puri Bhaji">
+                        <div class="price-tag">₹40</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Puri Bhaji </h3>
+                        <p>The Sunday morning special that makes waking up early totally worth it. Fluffy puris diving
+                            into spicy batata goodness!</p>
+                    </div>
+                </div>
+
+                <div class="menu-card highlight">
+                    <div class="card-img">
+                        <img src="images/misal_pav.png" alt="Misal Pav">
+                        <div class="price-tag">₹70</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Misal Pav </h3>
+                        <p>Like a warm, fiery hug for your soul. It's spicy, it's crunchy, and it's cheaper than
+                            therapy!</p>
+                    </div>
+                </div>
+
+                <div class="menu-card highlight">
+                    <div class="card-img">
+                        <img src="images/pineapple_shira_1772639224418.png" alt="Shira">
+                        <div class="price-tag">₹25</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Shira </h3>
+                        <p>A sweet, melt-in-your-mouth bowl of pure nostalgia. It's not just a dessert, it's a happy
+                            memory wrapped in ghee.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card highlight">
+                    <div class="card-img">
+                        <img src="images/upit_bowl_1772639308276.png" alt="Upit">
+                        <div class="price-tag">₹25</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Upit </h3>
+                        <p>A savory, comforting classic. Pro tip: Don't call it 'Upma' around here, it responds better
+                            to 'Upit' with a squeeze of lemon.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card highlight">
+                    <div class="card-img">
+                        <img src="images/pohe_bowl_1772709152428.png" alt="Pohe">
+                        <div class="price-tag">₹25</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Pohe </h3>
+                        <p>The unofficial breakfast kingdom of Maharashtra. Garnished with sev, peanuts, and a whole lot
+                            of morning joy.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card highlight">
+                    <div class="card-img">
+                        <img src="images/shira_upit_single_plate_1772638551201.png" alt="Combo">
+                        <div class="price-tag">₹30</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Shira/Upit/Pohe Combo </h3>
+                        <p>Can't decide between sweet and savory? Why choose when you can have both? A match made in
+                            breakfast heaven.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card highlight">
+                    <div class="card-img">
+                        <img src="images/batatafiteeres.png" alt="Batata Fritters">
+                        <div class="price-tag">₹30</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Batata Fritters </h3>
+                        <p>Simple potatoes transformed into golden magic. Because sometimes, the simplest things bring
+                            the most profound happiness.</p>
+                    </div>
+                </div>
+                <div class="menu-card highlight">
+                    <div class="card-img">
+                        <img src="images/kanda_fritters_1772638717211.png" alt="Kanda Fritters">
+                        <div class="price-tag">₹30</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Kanda Fritters </h3>
+                        <p>The unofficial sponsor of monsoon season. So crispy and onion-packed, you'll refuse to share
+                            them with anyone.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card highlight">
+                    <div class="card-img">
+                        <img src="images/palak_fritters_1772712079799.png" alt="Palak Fritters">
+                        <div class="price-tag">₹30</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Palak Fritters </h3>
+                        <p>The only time eating spinach feels like a sinful indulgence. Popeye's favorite street food
+                            upgrade!</p>
+                    </div>
+                </div>
+
+
+                <div class="menu-card highlight">
+                    <div class="card-img">
+                        <img src="images/mung_fritters_1772712150367.png" alt="Mung Fritters">
+                        <div class="price-tag">₹30</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Mung Fritters </h3>
+                        <p>Healthy, crispy, and dangerously addictive. The guilt-free snack that you'll end up eating
+                            guiltily large amounts of!</p>
+                    </div>
+                </div>
+
+                <div class="menu-card highlight">
+                    <div class="card-img">
+                        <img src="images/mix_fritters_1772712224197.png" alt="Mix Fritters">
+                        <div class="price-tag">₹30</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Mix Fritters </h3>
+                        <p>A carnival of crunch in every bite! Potato, onion, spinach, all crashing a delicious deep-fry
+                            party together.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card highlight">
+                    <div class="card-img">
+                        <img src="images/idli_sambhar_1772712266929.png" alt="Idli Sambhar">
+                        <div class="price-tag">₹30</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Idli Sambhar </h3>
+                        <p>Fluffy white clouds soaking in a spicy, tangy sambhar lake. South Indian perfection right in
+                            your neighborhood.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card highlight">
+                    <div class="card-img">
+                        <img src="images/mendu_vada_sambhar_1772712368782.png" alt="Mendu Vada">
+                        <div class="price-tag">₹20</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Mendu Vada Sambhar </h3>
+                        <p>The only time an empty center is perfectly acceptable. Crispy, dunkable rings of lentil
+                            brilliance.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card highlight">
+                    <div class="card-img">
+                        <img src="images/idli_mendu_vada_combo_1772712454451.png" alt="Idli Mendu Vada">
+                        <div class="price-tag">₹40</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Idli - Mendu Vada </h3>
+                        <p>The ultimate tag team: Soft Idli and crispy Mendu Vada teaming up to conquer your hunger. A
+                            true power couple!</p>
+                    </div>
+                </div>
+
+                <div class="menu-card highlight">
+                    <div class="card-img">
+                        <img src="images/batata_vada_sambhar_1772712532953.png" alt="Batata Vada Sambhar">
+                        <div class="price-tag">₹50</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Batata Vada Sambhar </h3>
+                        <p>When our legendary Batata Vada takes a spontaneous dip in hot, flavorful sambhar. A
+                            delightful crossover episode.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card highlight">
+                    <div class="card-img">
+                        <img src="images/mango_lassi_plastic_1772712695664.png" alt="Lassi">
+                        <div class="price-tag">₹30</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Lassi </h3>
+                        <p>Thick, creamy, and sweet. One glass of this and you'll be negotiating with your bed for a
+                            post-meal nap.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card highlight">
+                    <div class="card-img">
+                        <img src="images/chai.png" alt="Chai Coffee">
+                        <div class="price-tag">₹15</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Chai & Coffee ☕</h3>
+                        <p>The fuel that runs the country! Whether you lean towards a kadak chai or a frothy coffee,
+                            we've got your caffeine cravings covered.</p>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews section bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Customer Love</h2>
+                <p>What our community says about us.</p>
+            </div>
+
+            <div class="review-grid">
+                <div class="review-card">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">"The best Vadapav in town! The red chutney is incredibly flavorful. I have it
+                        every day on my way to work."</p>
+                    <div class="reviewer">- Anjali S.</div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p class="review-text">"Their Misal Pav is properly spicy and authentic. Very hygienic place and the
+                        prices are so affordable."</p>
+                    <div class="reviewer">- Rahul V.</div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">"Fresh Samosas and hot chai - the perfect evening snack combination. Highly
+                        recommend Shree Ram!"</p>
+                    <div class="reviewer">- Sneha P.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Franchise & Outlets -->
+    <section id="franchise" class="franchise section">
+        <div class="container">
+            <div class="franchise-content">
+                <div class="franchise-text">
+                    <h2>Grow With Us!</h2>
+                    <p>Want to become a part of the Shree Ram Vadapav family? We are expanding our footprint and looking
+                        for passionate franchise partners.</p>
+                    <ul class="features">
+                        <li><i class="fa-solid fa-check-circle"></i> Low Investment, High Returns</li>
+                        <li><i class="fa-solid fa-check-circle"></i> Standardized Taste & Quality</li>
+                        <li><i class="fa-solid fa-check-circle"></i> Complete Setup Support</li>
+                    </ul>
+                    <button id="open-franchise-modal" class="btn btn-primary mt-3">Enquire for Franchise</button>
+                </div>
+                <div class="outlets-card">
+                    <h3>Our Outlets</h3>
+                    <div class="location-item">
+                        <i class="fa-solid fa-location-dot" style="margin-top: 0;"></i>
+                        <div>
+                            <h4 style="margin-bottom: 10px;">Branches</h4>
+                            <ul style="list-style-type: none; padding: 0; line-height: 1.8;">
+                                <li><i class="fa-solid fa-store"
+                                        style="font-size: 0.9rem; color: var(--secondary-color); margin-right: 8px;"></i>Kalewadi
+                                </li>
+                                <li><i class="fa-solid fa-store"
+                                        style="font-size: 0.9rem; color: var(--secondary-color); margin-right: 8px;"></i>Wakad
+                                </li>
+                                <li><i class="fa-solid fa-store"
+                                        style="font-size: 0.9rem; color: var(--secondary-color); margin-right: 8px;"></i>Kasturi
+                                    Market</li>
+                                <li><i class="fa-solid fa-store"
+                                        style="font-size: 0.9rem; color: var(--secondary-color); margin-right: 8px;"></i>Dighi
+                                </li>
+                                <li><i class="fa-solid fa-store"
+                                        style="font-size: 0.9rem; color: var(--secondary-color); margin-right: 8px;"></i>Pimple
+                                    Nilakh</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="note mt-3">*More outlets launching soon across the city.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer & Contact -->
+    <footer id="contact" class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo text-white">
+                    <img src="images/logo.png" alt="Shree Ram Vadapav Logo"
+                        style="height: 70px; width: 70px; border-radius: 50%; object-fit: cover;">
+                    <span>Shree Ram </span> <span>Vadapav</span>
+                </a>
+                <p>Bringing authentic Maharashtrian street food to your neighborhood.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/shriram_vadapav/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Instagram"><i class="fa-brands fa-instagram" style="color: #E1306C;"></i></a>
+                    <a href="https://www.facebook.com/p/Shri-Ram-Wadapav-100094105215317/" target="_blank"
+                        rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook"
+                            style="color: #1877F2;"></i></a>
+                    <a href="#" aria-label="WhatsApp Community"><i class="fa-brands fa-whatsapp"
+                            style="color: #25D366;"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#franchise">Franchise</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><i class="fa-solid fa-phone"></i> +91 99xxxxxxx</li>
+                    <li><i class="fa-solid fa-envelope"></i> contact@shreeramvadapav.in</li>
+                    <li><i class="fa-solid fa-location-dot"></i> City Center Square, Maharashtra, India</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 Shree Ram Vadapav. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Franchise Enquiry Modal -->
+    <div id="franchise-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" id="close-franchise-modal">&times;</span>
+            <h2 style="color: var(--primary-color); margin-bottom: 10px;">Franchise Enquiry</h2>
+            <p style="color: var(--text-dark); margin-bottom: 20px;">Fill out the details below and we will contact you
+                on WhatsApp!</p>
+            <form id="franchise-form" class="franchise-form">
+                <input type="text" id="f-name" placeholder="Your Name" required>
+                <input type="tel" id="f-mobile" placeholder="Mobile Number" pattern="[0-9]{10}"
+                    title="10-digit mobile number" required>
+                <input type="text" id="f-location" placeholder="Preferred Location/Address" required>
+                <textarea id="f-purpose" placeholder="Why do you want to start a franchise?" rows="4"
+                    required></textarea>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Send on WhatsApp <i
+                        class="fa-brands fa-whatsapp"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
