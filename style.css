@@ -713,16 +713,17 @@ body.dark-mode .franchise-form textarea {
     margin-top: 10px;
 }
 
-/* Custom Cursor */
-body {
-    cursor: url('images/dhanush.png') 0 0, auto;
-    /* Fallback to standard cursor if image fails */
-}
+/* Custom Cursor - Desktop Only */
+@media (hover: hover) and (pointer: fine) {
+    body {
+        cursor: url('images/dhanush.png') 0 0, auto;
+    }
 
-a,
-button,
-input[type="submit"] {
-    cursor: url('images/ban.png') 10 10, pointer;
+    a,
+    button,
+    input[type="submit"] {
+        cursor: url('images/ban.png') 10 10, pointer;
+    }
 }
 
 /* Dark Mode */

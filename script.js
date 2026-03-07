@@ -53,9 +53,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { passive: true });
 
     // Check initial scroll position
-    if (window.scrollY > 50 || window.innerWidth <= 768) {
-        navbar.classList.add('scrolled');
-    }
+    window.requestAnimationFrame(() => {
+        if (window.scrollY > 50 || window.innerWidth <= 768) {
+            navbar.classList.add('scrolled');
+        }
+    });
 
     let isResizeTicking = false;
     window.addEventListener('resize', () => {
@@ -184,5 +186,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 window.onload = function () {
-    window.scrollTo(0, 0);
+    window.requestAnimationFrame(() => {
+        window.scrollTo(0, 0);
+    });
 };
