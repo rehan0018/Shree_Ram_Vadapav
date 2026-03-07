@@ -28,52 +28,69 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Navbar Scroll Effect
     const navbar = document.getElementById('navbar');
+    let isScrollTicking = false;
 
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            // Only make it transparent again if menu is not open on mobile
-            if (window.innerWidth > 768) {
-                navbar.classList.remove('scrolled');
-            }
+        if (!isScrollTicking) {
+            window.requestAnimationFrame(() => {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    // Only make it transparent again if menu is not open on mobile
+                    if (window.innerWidth > 768) {
+                        navbar.classList.remove('scrolled');
+                    }
+                }
+                isScrollTicking = false;
+            });
+            isScrollTicking = true;
         }
-    });
+    }, { passive: true });
 
     // Check initial scroll position
     if (window.scrollY > 50 || window.innerWidth <= 768) {
         navbar.classList.add('scrolled');
     }
 
+    let isResizeTicking = false;
     window.addEventListener('resize', () => {
-        if (window.innerWidth <= 768) {
-            navbar.classList.add('scrolled');
-        } else if (window.scrollY <= 50) {
-            navbar.classList.remove('scrolled');
+        if (!isResizeTicking) {
+            window.requestAnimationFrame(() => {
+                if (window.innerWidth <= 768) {
+                    navbar.classList.add('scrolled');
+                } else if (window.scrollY <= 50) {
+                    navbar.classList.remove('scrolled');
+                }
+                isResizeTicking = false;
+            });
+            isResizeTicking = true;
         }
-    });
+    }, { passive: true });
 
 
-    // Active Nav Link on Scroll
+    // Active Nav Link on Scroll (Optimized with Intersection Observer)
     const sections = document.querySelectorAll('section, footer');
+    const observerOptions = {
+        root: null,
+        rootMargin: '-50% 0px -50% 0px',
+        threshold: 0
+    };
 
-    window.addEventListener('scroll', () => {
-        let current = '';
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
-            if (scrollY >= (sectionTop - 200)) {
-                current = section.getAttribute('id');
+    const navObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const currentId = entry.target.getAttribute('id');
+                navLinksItems.forEach(li => {
+                    li.classList.remove('active');
+                    if (li.getAttribute('href').includes(currentId)) {
+                        li.classList.add('active');
+                    }
+                });
             }
         });
+    }, observerOptions);
 
-        navLinksItems.forEach(li => {
-            li.classList.remove('active');
-            if (li.getAttribute('href').includes(current)) {
-                li.classList.add('active');
-            }
-        });
-    });
+    sections.forEach(section => navObserver.observe(section));
 
     // Theme Toggle
     const themeToggleBtn = document.getElementById('theme-toggle');
@@ -156,6 +173,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
-window.onload=function(){
-  window.scrollTo(0,0);
+window.onload = function () {
+    window.scrollTo(0, 0);
 };
