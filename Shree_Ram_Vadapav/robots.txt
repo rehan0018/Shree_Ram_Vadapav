@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rehan0018.github.io/Shree_Ram_Vadapav/sitemap.xml
