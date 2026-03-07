@@ -32,12 +32,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('scroll', () => {
         if (!isScrollTicking) {
+            // DOM Read phase (outside of animation frame)
+            const currentScrollY = window.scrollY;
+            const currentWidth = window.innerWidth;
+
             window.requestAnimationFrame(() => {
-                if (window.scrollY > 50) {
+                // DOM Write phase
+                if (currentScrollY > 50) {
                     navbar.classList.add('scrolled');
                 } else {
                     // Only make it transparent again if menu is not open on mobile
-                    if (window.innerWidth > 768) {
+                    if (currentWidth > 768) {
                         navbar.classList.remove('scrolled');
                     }
                 }
@@ -55,10 +60,15 @@ document.addEventListener('DOMContentLoaded', () => {
     let isResizeTicking = false;
     window.addEventListener('resize', () => {
         if (!isResizeTicking) {
+            // DOM Read phase (outside of animation frame)
+            const currentWidth = window.innerWidth;
+            const currentScrollY = window.scrollY;
+
             window.requestAnimationFrame(() => {
-                if (window.innerWidth <= 768) {
+                // DOM Write phase
+                if (currentWidth <= 768) {
                     navbar.classList.add('scrolled');
-                } else if (window.scrollY <= 50) {
+                } else if (currentScrollY <= 50) {
                     navbar.classList.remove('scrolled');
                 }
                 isResizeTicking = false;
