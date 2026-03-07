@@ -42,12 +42,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
-        rel="stylesheet" media="print" onload="this.media='all'">
-    <noscript>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
-            rel="stylesheet">
-    </noscript>
+        rel="stylesheet">
 
     <!-- Preload Critical Assets for LCP -->
     <link rel="preload" as="image" href="images/hero.webp">
@@ -97,7 +92,7 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-bg">
-            <img src="images/hero.webp" alt="Delicious Indian Snacks" width="800" height="600">
+            <img fetchpriority="high" src="images/hero.webp" alt="Delicious Indian Snacks" width="800" height="600">
             <div class="overlay"></div>
         </div>
         <div class="container hero-content">

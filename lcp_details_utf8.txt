@@ -1,0 +1,89 @@
+﻿{
+  "id": "largest-contentful-paint-element",
+  "title": "Largest Contentful Paint element",
+  "description": "This is the largest contentful element painted within the viewport. [Learn more about the Largest Contentful Paint element](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/)",
+  "score": 0,
+  "scoreDisplayMode": "metricSavings",
+  "displayValue": "3,160\u00a0ms",
+  "metricSavings": {
+    "LCP": 650
+  },
+  "details": {
+    "type": "list",
+    "items": [
+      {
+        "type": "table",
+        "headings": [
+          {
+            "key": "node",
+            "valueType": "node",
+            "label": "Element"
+          }
+        ],
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-0-H1",
+              "path": "1,HTML,1,BODY,3,SECTION,1,DIV,0,H1",
+              "selector": "body > section#home > div.container > h1",
+              "boundingRect": {
+                "top": 268,
+                "bottom": 441,
+                "left": 21,
+                "right": 391,
+                "width": 371,
+                "height": 173
+              },
+              "snippet": "<h1>",
+              "nodeLabel": "The Authentic Taste of\nStreet Food"
+            }
+          }
+        ]
+      },
+      {
+        "type": "table",
+        "headings": [
+          {
+            "key": "phase",
+            "valueType": "text",
+            "label": "Phase"
+          },
+          {
+            "key": "percent",
+            "valueType": "text",
+            "label": "% of LCP"
+          },
+          {
+            "key": "timing",
+            "valueType": "ms",
+            "label": "Timing"
+          }
+        ],
+        "items": [
+          {
+            "phase": "TTFB",
+            "timing": 847.348,
+            "percent": "27%"
+          },
+          {
+            "phase": "Load Delay",
+            "timing": 0,
+            "percent": "0%"
+          },
+          {
+            "phase": "Load Time",
+            "timing": 0,
+            "percent": "0%"
+          },
+          {
+            "phase": "Render Delay",
+            "timing": 2316.4320000000002,
+            "percent": "73%"
+          }
+        ]
+      }
+    ]
+  },
+  "guidanceLevel": 1
+}
